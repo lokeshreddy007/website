@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 03, 2018 at 05:25 PM
+-- Generation Time: Jan 08, 2019 at 05:08 PM
 -- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- PHP Version: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `livinpassdb`
+-- Database: `website`
 --
 
 -- --------------------------------------------------------
@@ -37,6 +37,13 @@ CREATE TABLE `code` (
   `codebro` varchar(45) DEFAULT NULL,
   `dat` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `code`
+--
+
+INSERT INTO `code` (`id`, `name`, `mail`, `num`, `code`, `codebro`, `dat`) VALUES
+(9, 'hello', 'hello@gmail.com', 1234567890, '123', '123', NULL);
 
 -- --------------------------------------------------------
 
@@ -976,7 +983,7 @@ ALTER TABLE `whatwedo`
 -- AUTO_INCREMENT for table `code`
 --
 ALTER TABLE `code`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `conformtablenow`
